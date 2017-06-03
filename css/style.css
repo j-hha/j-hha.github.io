@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700|Playfair+Display:700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+  /*border: 1px dotted darkgrey;*/
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: rgba(38,38,38,1);
+  margin: 0;
+  padding: 0;
+}
+
+
+nav {
+  background-color: #FDFDFD;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-shadow: 2px 2px 4px rgba(38,38,38,.1);
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 3vmax;
+  line-height: 3vmax;
+}
+
+nav a {
+  color: rgba(38,38,38,1);
+  text-decoration: none;
+}
+
+a {
+  color: rgba(38,38,38,1);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgba(55,162,178,1);
+}
+
+a:active {
+  color: rgba(55,162,178,.5);
+}
+
+header {
+  text-align: center;
+  background-color: rgba(38,38,38,1);
+  width: 100vw;
+  height: 90vh;
+  margin: 10vh 0 0 0;
+  padding: 0 3vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  text-align: right;
+}
+
+header h1 {
+  width: 80vw;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 15vmax;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: url('../img/backgroundVector_0028-HQ-01.jpg');
+  /*<a href="https://www.vexels.com/vectors/preview/77806/abstract-circle-seamless-pattern"> Abstract circle seamless pattern </a> | designed by Vexels*/
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  color: #FDFDFD;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-container {
+  position: absolute;
+  bottom: 1vmax;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.icon-container a:hover {
+  color: rgba(55,162,178,1);
+}
+
+.icon-container a:active {
+  color: rgba(55,162,178,.5);
+}
+
+header .icon-container a {
+  color: #FDFDFD;
+  font-size: 10vh;
+}
+
+section .icon-container a {
+  color: rgba(38,38,38,1);
+  font-size: 5vmax;
+}
+
+section {
+  height: 90vh;
+  padding: 0 3vmax;
+  margin: 10vh 0 0 0;
+  /*border: 2vmax solid deeppink;*/
+  background-color: #fff;
+  position: relative;
+  font-size: 3vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+}
+
+section:not(#connect) {
+  border-bottom: 2px solid #f2f2f2;
+}
+
+h2 {
+  text-align: right;
+  font-size: 5vmax;
+  text-transform: uppercase;
+  text-decoration: overline;
+}
+
+p {
+  text-align: justify;
+}
+
+dl {
+  text-align: right;
+}
+
+dl dt {
+  padding: 1vmax 2vmax 1vmax 2vmax;
+  font-weight: bold;
+}
+
+dl dd {
+  padding: 1vmax 2vmax 1vmax 2vmax;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+}
+
+ul li {
+  padding: 2vmax;
+}
+
+footer {
+  height: 8vh;
+  text-transform: uppercase;
+  padding: 1vmax;
+  border-top: 1px solid #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FDFDFD;
+}
+
+footer p {
+  font-size: 1.7vmax;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: rgba(38,38,38,.8)
+}
+
+footer small {
+  color: rgba(38,38,38,.5)
+}
+
+footer small a {
+  color: rgba(38,38,38,.5)
+}
+
+@media (orientation: landscape) {
+  header h1 {
+    font-size: 12vmax;
+    padding: 0 5vmax;
+  }
+
+  section {
+    font-size: 2.5vmax;
+    padding: 0 9vmax;
+  }
+
+  h2 {
+    font-size: 4vmax;
+  }
+
+  footer p {
+    font-size: 1.2vmax;
+  }
+}
