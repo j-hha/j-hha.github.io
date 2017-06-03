@@ -124,7 +124,6 @@ section {
   height: 90vh;
   padding: 0 3vmax;
   margin: 10vh 0 0 0;
-  /*border: 2vmax solid deeppink;*/
   background-color: #fff;
   position: relative;
   font-size: 3vmax;
@@ -135,9 +134,9 @@ section {
   width: 100vw;
 }
 
-section:not(#connect) {
+/*section:not(#connect) {
   border-bottom: 2px solid #f2f2f2;
-}
+}*/
 
 h2 {
   text-align: right;
@@ -149,6 +148,45 @@ h2 {
 p {
   text-align: justify;
 }
+
+.img-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.img-container div {
+  height: 100%;
+  margin: auto;
+}
+
+.img-container div img {
+  height: 100%;
+  display: block;
+  margin: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.img-container a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 2vh 0;
+  background: rgba(255,255,255,.9);
+  background: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1));
+  background: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1));
+  background: -moz-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1));
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1));
+  text-decoration: none;
+}
+
 
 dl {
   text-align: right;
@@ -201,6 +239,24 @@ footer small {
 
 footer small a {
   color: rgba(38,38,38,.5)
+}
+
+.fa-angle-right:hover {
+  color: rgba(55,162,178,1);
+  transition-duration: .5s;
+}
+
+.fa-angle-right:active {
+  color: rgba(55,162,178,.5);
+}
+
+.fa-angle-left:hover {
+  color: rgba(55,162,178,1);
+  transition-duration: .5s;
+}
+
+.fa-angle-left:active {
+  color: rgba(55,162,178,.5);
 }
 
 @media (orientation: landscape) {
