@@ -53,6 +53,7 @@ a {
 
 a:hover {
   color: rgba(55,162,178,1);
+  transition-duration: .5s;
 }
 
 a:active {
@@ -79,7 +80,7 @@ header h1 {
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   font-weight: bolder;
-  font-size: 15vmax;
+  font-size: 14vmax;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-image: url('../img/backgroundVector_0028-HQ-01.jpg');
@@ -102,6 +103,7 @@ header h1 {
 
 .icon-container a:hover {
   color: rgba(55,162,178,1);
+  transition-duration: .5s;
 }
 
 .icon-container a:active {
@@ -153,12 +155,12 @@ dl {
 }
 
 dl dt {
-  padding: 1vmax 2vmax 1vmax 2vmax;
+  padding: 1vmax 0 1vmax 0;
   font-weight: bold;
 }
 
 dl dd {
-  padding: 1vmax 2vmax 1vmax 2vmax;
+  padding: 1vmax 0 1vmax 0;
 }
 
 ul {
@@ -171,6 +173,7 @@ ul {
 ul li {
   padding: 2vmax;
 }
+
 
 footer {
   height: 8vh;
@@ -211,8 +214,12 @@ footer small a {
     padding: 0 9vmax;
   }
 
+  dl {
+    font-size: 2vmax;
+  }
+
   h2 {
-    font-size: 4vmax;
+    font-size: 3vmax;
   }
 
   footer p {
