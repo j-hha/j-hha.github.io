@@ -11,6 +11,7 @@ body {
   color: rgba(38,38,38,1);
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 
@@ -26,7 +27,7 @@ nav {
   padding: 0;
   margin: 0;
   box-shadow: 2px 2px 4px rgba(38,38,38,.1);
-  z-index: 1;
+  z-index: 2;
 }
 
 nav ul {
@@ -134,9 +135,10 @@ section {
   width: 100vw;
 }
 
-/*section:not(#connect) {
+#projects {
   border-bottom: 2px solid #f2f2f2;
-}*/
+  border-top: 2px solid #f2f2f2;
+}
 
 h2 {
   text-align: right;
@@ -258,6 +260,75 @@ footer small a {
 .fa-angle-left:active {
   color: rgba(55,162,178,.5);
 }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 40vw solid transparent;
+  border-right: 40vw solid rgba(38,38,38,1);
+  border-bottom: 45vh solid rgba(38,38,38,1);
+  border-top: 45vh solid rgba(38,38,38,1);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.triangle-wrapper {
+  background-image: url('../img/backgroundVector_0028-HQ-01.jpg');
+  /*<a href="https://www.vexels.com/vectors/preview/77806/abstract-circle-seamless-pattern"> Abstract circle seamless pattern </a> | designed by Vexels*/
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 45vw;
+  height: 89vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#connect {
+  background-color: rgba(38,38,38,1);
+  color: #FDFDFD;
+}
+
+#connect h2 {
+  z-index: 1;
+}
+
+#connect ul {
+  z-index: 1;
+}
+
+#connect a {
+  color: #FDFDFD;
+  text-decoration: none;
+}
+
+#connect a:hover {
+  color: rgba(55,162,178,1);
+  transition-duration: .5s;
+}
+
+#connect a:active {
+  color: rgba(55,162,178,.5);
+}
+
+.transition {
+  animation-name: fade-in;
+  animation-duration:5s;
+}
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+ 100% { opacity: 1; }
+}
+
 
 @media (orientation: landscape) {
   header h1 {
