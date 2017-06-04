@@ -23,7 +23,6 @@ body {
   100% {opacity: 1;}
 }
 
-
 nav {
   background-color: #FDFDFD;
   position: fixed;
@@ -101,6 +100,9 @@ header h1 {
   color: #FDFDFD;
   padding: 0;
   margin: 0;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  opacity: 1;
 }
 
 
