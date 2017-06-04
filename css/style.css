@@ -171,37 +171,31 @@ p {
   text-align: justify;
 }
 
-.img-container {
+
+#project-container {
   width: 100%;
-  height: 50%;
+  height: 90vh;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
+  font-size: 5vmax;
+  background-color: transparent;
+  background-image: url('../img/project1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.img-container div {
-  height: 100%;
-  margin: auto;
-}
 
-.img-container div img {
-  height: 80%;
-  max-width: 80vw;
-  display: block;
-  margin: 20% auto 0 auto;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.img-container a {
+#link-container a {
   position: absolute;
   bottom: 0;
   left: 0;
   text-align: center;
   width: 100%;
-  padding: 2vh 0;
+  padding: 2vh 0 15vh 0;
   background: rgba(255,255,255,.9);
   background: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1));
   background: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1));
@@ -267,22 +261,32 @@ footer small a {
   color: rgba(38,38,38,.5)
 }
 
-.fa-angle-right:hover {
+.fa-angle-right {
   color: rgba(55,162,178,1);
+  text-shadow: 1px 1px 1px black;
+}
+
+.fa-angle-right:hover {
+  color: #87C7D0;
   transition-duration: .5s;
 }
 
 .fa-angle-right:active {
-  color: rgba(55,162,178,.5);
+  color: #B7DDE2;
+}
+
+.fa-angle-left {
+  color: rgba(55,162,178,1);
+  text-shadow: 1px 1px 1px black;
 }
 
 .fa-angle-left:hover {
-  color: rgba(55,162,178,1);
+  color: #87C7D0;
   transition-duration: .5s;
 }
 
 .fa-angle-left:active {
-  color: rgba(55,162,178,.5);
+  color: #B7DDE2;
 }
 
 .triangle {

@@ -4,34 +4,34 @@ $(function() {
     leftArrow: $('.fa-angle-left').eq(0),
     rightArrow: $('.fa-angle-right').eq(0),
     projectContainer: $('#project-container'),
-    img: $('.project-img')
+    linkContainer: $('#link-container')
   };
 
   // ********* PROJECT NAVIGATION *********
 
 var $projects = [
   {
-    img: $('<img class="project-img" src="img/project1.png" alt="">'),
+    img: 'url("img/project1.png")',
     link: $('<a href="https://github.com/j-hha/egg_hunt">browser game: Egg Hunt</a>'),
     visible: true
   },
   {
-    img: $('<img class="project-img" src="img/project2.png" alt="">'),
+    img: 'url("img/project2.png")',
     link: $('<a href="https://github.com/j-hha/study_tool">full stack study app: Crammer </a>'),
     visible: false
   },
   {
-    img: $('<img class="project-img" src="img/project3.png" alt="">'),
+    img: 'url("img/project3.png")',
     link: $('<a href="http://fitkids.herokuapp.com/">full stack app: Fit Kids</a>'),
     visible: false
   },
   {
-    img: $('<img class="project-img" src="img/project4.png" alt="">'),
+    img: 'url("img/project4.png")',
     link: $('<a href="https://find-the-perfect-excuse.herokuapp.com/">full stack app: The Perfect Excuse</a>'),
     visible: false
   },
   {
-    img: $('<img class="project-img" src="img/project5.png" alt="">'),
+    img: 'url("img/project5.png")',
     link: $('<a href="https://github.com/j-hha/final_project">full stack app: Coffee Compass</a>'),
     visible: false
   }
@@ -39,7 +39,7 @@ var $projects = [
 
   // ********* ACTIONS *********
 
-  $domElements.projectContainer.append($projects[0].img).append($projects[0].link);
+  $domElements.linkContainer.append($projects[0].link);
   $domElements.leftArrow.css('visibility', 'hidden');
 
   var $next = function() {
@@ -57,8 +57,9 @@ var $projects = [
         $projects[i + 1].visible = true;
         $projects[i].visible = false;
         console.log(i , $projects[i].visible, i+1, $projects[i + 1].visible);
-        $domElements.projectContainer.empty();
-        $domElements.projectContainer.append($projects[i + 1].img).append($projects[i + 1].link);
+        $domElements.linkContainer.empty();
+        $domElements.projectContainer.css('background-image', $projects[i + 1].img)
+        $domElements.linkContainer.append($projects[i + 1].link);
         break
       }
     }
@@ -77,8 +78,9 @@ var $projects = [
         $projects[i - 1].visible = true;
         $projects[i].visible = false;
         console.log(i , $projects[i].visible, i-1, $projects[i - 1].visible);
-        $domElements.projectContainer.empty();
-        $domElements.projectContainer.append($projects[i - 1].img).append($projects[i - 1].link);
+        $domElements.linkContainer.empty();
+        $domElements.projectContainer.css('background-image', $projects[i - 1].img)
+        $domElements.linkContainer.append($projects[i - 1].link);
         break
       }
     }
