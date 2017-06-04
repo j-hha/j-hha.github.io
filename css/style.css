@@ -12,6 +12,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  opacity: 1;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  50% {opacity: .5;}
+  100% {opacity: 1;}
 }
 
 
